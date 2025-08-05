@@ -3,7 +3,7 @@ Root, Python and others plotting style.
 
 
 ## ROOT plotting script
-In the `.cc` file, add 
+In the `.cc` file, add the following lines. Adjusted from 2013 version.
 
 ```cpp
 #include "TH1.h"
@@ -82,7 +82,6 @@ void dib()
   novaStyle->SetTitleSize(.055, "xyz");
   novaStyle->SetTitleOffset(.8, "xyz");
   // More space for y-axis to avoid clashing with big numbers
-//  novaStyle->SetTitleOffset(.9, "y");
   novaStyle->SetTitleOffset(.9, "y");
   // This applies the same settings to the overall plot title
   novaStyle->SetTitleSize(.055, "");
@@ -103,7 +102,7 @@ void dib()
   novaStyle->SetPadTickX(1);
   novaStyle->SetPadTickY(1);
   
-  //png scale
+  //PNG picture scale
  // novaStyle->SetImageScaling(13.);
 
   // Fonts 
