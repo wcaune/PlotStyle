@@ -6,6 +6,38 @@ Root, Python and others plotting style.
 In the `.cc` file, add 
 
 ```cpp
+#include "TH1.h"
+#include "TGraph.h"
+#include "TH2.h"
+#include "TF1.h"
+#include "TROOT.h"
+#include "TStyle.h"
+#include "TMath.h"
+#include "TFile.h"
+#include "TCanvas.h"
+#include "TPad.h"
+#include "TGraphErrors.h"
+#include "TVectorD.h"
+#include "TTimeStamp.h"
+#include <fstream>
+#include <iostream>
+#include "TMinuit.h"
+#include "TString.h"
+#include <vector>
+#include <string.h>
+#include "TLatex.h"
+#include "TPaveStats.h"
+#include "TDatime.h"
+#include "TColor.h"
+#include "TProfile.h"
+#include "TProfile2D.h"
+#include "TTree.h"
+#include "TLegend.h"
+#include "THStack.h"
+
+#include "RooUnfoldResponse.h"
+#include "RooUnfoldBayes.h"
+
 void dib()
 {
  // Defaults to classic style, but that's OK, we can fix it
